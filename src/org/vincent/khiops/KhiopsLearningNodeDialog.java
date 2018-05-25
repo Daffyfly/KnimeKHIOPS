@@ -30,35 +30,47 @@ public class KhiopsLearningNodeDialog extends DefaultNodeSettingsPane {
     protected KhiopsLearningNodeDialog() {
         super();
         
+    	createNewGroup("Khiops File");
+    	
         addDialogComponent(new DialogComponentFileChooser(
         		new SettingsModelString(
         				KhiopsLearningNodeModel.CFGKEY_EXEC, 
         				""),
         		"Khiops File", JFileChooser.OPEN_DIALOG, false));
+
+    	createNewGroup("Dictionnary File");
         
         addDialogComponent(new DialogComponentFileChooser(
         		new SettingsModelString(
         				KhiopsLearningNodeModel.CFGKEY_DICT, 
         				""),
         		"Dictionnary File", JFileChooser.OPEN_DIALOG, false));
+
+    	createNewGroup("Training File");
         
         addDialogComponent(new DialogComponentFileChooser(
         		new SettingsModelString(
         				KhiopsLearningNodeModel.CFGKEY_TRAINING, 
         				""),
         		"Training File", JFileChooser.OPEN_DIALOG, false));
-        
+
+    	createNewGroup("Variable to predict");
+    	
         addDialogComponent(new DialogComponentString(
         		new SettingsModelString(
         				KhiopsLearningNodeModel.CFGKEY_PREDICTION, 
         				""),
         		"Variable to predict"));
-        
+
+    	createNewGroup("Separator");
+    	
         addDialogComponent(new DialogComponentString(
         		new SettingsModelString(
         				KhiopsLearningNodeModel.CFGKEY_SEPARATOR, 
         				""),
         		"Separator"));
+
+    	createNewGroup("Result directory");
         
         addDialogComponent(new DialogComponentFileChooser(
         		new SettingsModelString(

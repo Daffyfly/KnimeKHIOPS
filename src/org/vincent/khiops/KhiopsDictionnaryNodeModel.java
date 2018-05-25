@@ -118,7 +118,7 @@ public class KhiopsDictionnaryNodeModel extends NodeModel {
 						StringCellFactory.create(resdir + "dictionnary.kdic")
 				}));
     	
-
+		
 
     	
         container2.close();

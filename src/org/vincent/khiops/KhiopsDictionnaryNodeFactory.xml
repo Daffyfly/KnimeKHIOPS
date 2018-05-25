@@ -3,15 +3,11 @@
     <name>KhiopsDictionnary</name>
     
     <shortDescription>
-        
+        Node to create a Dictionnary from a KNIME dataset.
     </shortDescription>
     
     <fullDescription>
-        <intro>Insert long description here...</intro>
-        
-        
-        <option name="short name of first option (like in the dialog)">description of first option</option>
-        <option name="short name of second option (like in the dialog)">description of second option</option>
+        <option name="Directory">Choose the directory in which the dictionnary will be created</option>
         <!-- possibly more options that can also be grouped by tabs -->
         <!--
         <tab name="Standard Options">
@@ -25,9 +21,10 @@
     </fullDescription>
     
     <ports>
-        <inPort index="0" name="In-Port name">Description of first input port...</inPort>
+        <inPort index="0" name="KNIME Dataset">KNIME Dataset</inPort>
         <!-- possibly more input ports here-->
-        <outPort index="0" name="Out-Port name">Description of first output port...</outPort>
+        <outPort index="0" name="Type table">Table containing 2 columns, a column with the name of the variables and a column with the associated types.</outPort>
+        <outPort index="1" name="Path to dictionnary">Table containing the path to the dictionnary</outPort>
         <!-- possibly more output ports here-->
     </ports>    
     <views>

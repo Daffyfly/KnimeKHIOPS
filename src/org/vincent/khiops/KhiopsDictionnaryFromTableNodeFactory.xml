@@ -3,15 +3,11 @@
     <name>KhiopsDictionnaryFromTable</name>
     
     <shortDescription>
-        
+        Node to create a Dictionnary from a table. Available types : Categorical, Numerical, Date
     </shortDescription>
     
     <fullDescription>
-        <intro>Insert long description here...</intro>
-        
-        
-        <option name="short name of first option (like in the dialog)">description of first option</option>
-        <option name="short name of second option (like in the dialog)">description of second option</option>
+        <option name="Directory">Choose the directory in which the dictionnary will be created</option>
         <!-- possibly more options that can also be grouped by tabs -->
         <!--
         <tab name="Standard Options">
@@ -24,10 +20,10 @@
         -->
     </fullDescription>
     
-    <ports>
-        <inPort index="0" name="In-Port name">Description of first input port...</inPort>
+     <ports>
+        <inPort index="0" name="Type tables">Table of 2 columns, one containing the names of the variables and the other the associated types</inPort>
         <!-- possibly more input ports here-->
-        <outPort index="0" name="Out-Port name">Description of first output port...</outPort>
+        <outPort index="0" name="Path to dictionnary">Table containing the path to the dictionnary</outPort>
         <!-- possibly more output ports here-->
     </ports>    
     <views>

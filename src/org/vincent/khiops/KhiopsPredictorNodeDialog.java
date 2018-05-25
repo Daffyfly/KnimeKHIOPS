@@ -30,11 +30,16 @@ public class KhiopsPredictorNodeDialog extends DefaultNodeSettingsPane {
     protected KhiopsPredictorNodeDialog() {
         super();
         
+
+    	createNewGroup("Khiops File");
+    	
         addDialogComponent(new DialogComponentFileChooser(
         		new SettingsModelString(
         				KhiopsPredictorNodeModel.CFGKEY_EXEC, 
         				""),
         		"Khiops File", JFileChooser.OPEN_DIALOG, false));
+        
+        createNewGroup("Scoring File");
         
         addDialogComponent(new DialogComponentFileChooser(
         		new SettingsModelString(
@@ -42,11 +47,16 @@ public class KhiopsPredictorNodeDialog extends DefaultNodeSettingsPane {
         				""),
         		"Scoring File", JFileChooser.OPEN_DIALOG, false));
         
+        createNewGroup("Separator");
+        
         addDialogComponent(new DialogComponentString(
         		new SettingsModelString(
         				KhiopsPredictorNodeModel.CFGKEY_SEPARATOR, 
         				""),
         		"Separator"));
+        
+
+    	createNewGroup("Result directory");
         
         addDialogComponent(new DialogComponentFileChooser(
         		new SettingsModelString(
