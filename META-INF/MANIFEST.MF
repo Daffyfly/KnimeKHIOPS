@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: KhiopsLearning-Node extension for KNIME Workbench
+Bundle-SymbolicName: org.vincent.khiops; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: khiopslearning.jar
+Bundle-Activator: org.vincent.khiops.KhiopsLearningNodePlugin
+Bundle-Vendor: 
+Require-Bundle: org.eclipse.core.runtime,
+ org.knime.workbench.core,
+ org.knime.workbench.repository,
+ org.knime.base
+Bundle-ActivationPolicy: lazy
+Export-Package: org.vincent.khiops
+
